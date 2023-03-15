@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+    <meta charset="utf-8" />
+  </head>
+  <script>
+var audio;
+const value = Math.random()
+ 
+window.onload = function() {
+    audio = document.getElementById("audio");
+};
+ 
+function play() {
+    audio.play();
+}
+function getRandomInt(min, max) {
+  return Math.floor(Math.random() * (max-min+1))+min;
+}
+ 
+function pause() {
+    setTimeout(_=>audio.pause(), getRandomInt(1,10)*1000); 
+}
+</script>
+<audio src="Z_NIGHT_-_Tancujj_so_mnojj_v_temnote_69479964.mp3"></audio>
+<audio controls>
+    <source src="Z_NIGHT_-_Tancujj_so_mnojj_v_temnote_69479964.ogg" type="audio/ogg" >
+    <source src="Z_NIGHT_-_Tancujj_so_mnojj_v_temnote_69479964.mp3" type="audio/mp3" >
+  </audio>
+  <audio id="player" src="Z_NIGHT_-_Tancujj_so_mnojj_v_temnote_69479964.mp3"></audio>
+</head>
+</html>
